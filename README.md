@@ -10,3 +10,4 @@ First, you need to run the following scripts:
 
 ```bash
 npm run migrate
+npm run start
