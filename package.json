@@ -3,6 +3,10 @@
   "main": "server.js",
   "keywords": [],
   "author": "Fatemeh nassari",
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "node migrations/index.js"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
