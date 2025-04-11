@@ -1,5 +1,6 @@
 const express = require('express');
 const { create, getAll, deleteTag } = require('../controllers/tags');
+const isAdmin = require('../middlewares/isAdmin');
 const tags_router = express.Router();
 
 
@@ -10,7 +11,7 @@ tags_router
 
 tags_router
 .route("/:id")
-.delete(deleteTag)
+.delete(isAdmin,deleteTag)
 
 
 module.exports = tags_router;
