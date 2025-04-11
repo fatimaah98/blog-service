@@ -1,4 +1,3 @@
--- ? many to many:
 CREATE TABLE articles_tags (
     id int(10) unsigned NOT NULL AUTO_INCREMENT,
     article_id int(10) unsigned NOT NULL,

@@ -2,11 +2,8 @@ require("dotenv").config()
 
 module.exports = {
     db: {
-        user: process.env.DB_USER,
-        port: process.env.DB_PORT,
-        host: process.env.DB_HOST,
-        password: process.env.DB_PASSWORD,
-        name: process.env.DB_NAME
+        uri: process.env.DB_URI,
+        poolSize: process.env.DB_POOL || 10,
     },
 
     port: parseInt(process.env.PORT) || 4000,
