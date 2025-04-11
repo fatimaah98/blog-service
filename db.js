@@ -9,7 +9,6 @@ const connection = mysql.createConnection({
     password: configs.db.password,
     database: configs.db.name
 })
-
 connection.connect((err) => {
     if(err) {
         throw "error in connection: " + err

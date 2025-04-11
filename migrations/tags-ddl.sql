@@ -1,6 +1,5 @@
---? tag queries
 CREATE TABLE tags (
-	id int(10) unsigned NOT NULL AUTO_INCREMENT,
+    id int(10) unsigned NOT NULL AUTO_INCREMENT,
     title varchar(100) NOT NULL,
     created_at datetime DEFAULT CURRENT_TIMESTAMP,
     
